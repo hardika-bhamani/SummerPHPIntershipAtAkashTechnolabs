@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.myDiv1 {
+  border: 5px outset white;
+  background-image: linear-gradient(#82afff, lightblue);   
+  text-align: center;
+  padding:30px;
+ margin:100px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5d5c61;
+  color: white;
+}
+.myDiv {
+  border: 10px;
+  background-color: lightblue;    
+  text-align: center;
+  color: white;
+  font-size:20px;
+}
+
+</style>
+</head>
+<body style="background-color:white;">
+<div class="myDiv">
+<h2>Customer Booking Details</h2>
+
+</div>
+<table id="customers">
+  <tr>
+    <th>Customername</th>
+    <th>Contact</th>
+    <th>Address</th>
+  </tr>
+  <tr>
+    <td>Dhruvi Bhamani</td>
+    <td>9714943325</td>
+    <td>Vadodara</td>
+  </tr>
+  <tr>
+    <td>Jinkal prajapati</td>
+    <td>9824643349</td>
+    <td>Surat</td>
+  </tr>
+  <tr>
+    <td>Vandana Purohit</td>
+    <td>9897969594</td>
+    <td>Banaskatha</td>
+  </tr>
+  <tr>
+    <td>Sharya Shabarwal</td>
+    <td>8989898989</td>
+    <td>Mumbai</td>
+  </tr>
+
+  <tr>
+    <td>Anokhi Bhalla</td>
+    <td>9898989896</td>
+    <td>Uatrakhand</td>
+  </tr>
+  <tr>
+    <td>Krishna Meghani</td>
+    <td>7878787878</td>
+    <td>Goa</td>
+  </tr>
+  <tr>
+    <td>LoveYatri Mishra</td>
+    <td>9808080808</td>
+    <td>Chandigadh</td>
+  </tr>
+
+ 
+</table>
+<center>
+<div class="myDiv1">
+  <h2>Customer Appoinments</h2>
+  <p>Success        Pending        Fail</p>
+</div>
+</center>
+<center>
+<div class="myDiv1">
+  <h2>Customers Product Details</h2>
+  <p>Mehandi cone       Mehandi Packets       Hirakani</p>
+</div>
+</center>
+<center>
+<div class="myDiv1">
+  <h2>Active Delivery</h2>
+
+</div>
+</center>
+</body>
+</html>

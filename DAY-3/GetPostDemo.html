@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+        <style>
+            #users {
+                  border: 10px solid white;
+                  margin-left: 300px;
+                  margin-top: 70px;
+                  padding: 20px;
+                  width: 400px;
+                  height: 250px;
+            }
+            div {text-align: center;}
+            body {
+                  background-image: url('bgImageForDay3.jpg');
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  
+            }
+            .vertical-center {
+            margin: 0;
+            position: absolute;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            }
+            .btn{
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 4px;
+                margin: 5px 0;
+                opacity: 0.85;
+                display: inline-block;
+                font-size: 17px;
+                align-items: center;
+                line-height: 20px;
+                align-self: center;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body bgcolor="white" >
+        <form action="process.php" method="post">
+            
+                <table id="users">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="txt1" required/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="txt2" required/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="txt3"/></td>
+                    <td><input type="reset" name="txt4"/></td>
+                </tr>
+            </table>
+         
+        </form>
+
+    </body>
+</html>
